@@ -8,12 +8,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty", "html:Reports/htmlReport.html", "json:Reports/jsonReport.json"},
-		glue = "step_definitions",
-		features ="./src/test/resources/Features/CraterFeatures",
-		tags = "@regression",
+		features = "./src/test/resources/Features",
+		tags= "@api",
+		glue = "step_definitionsApi",
 		dryRun = false,
 		publish = true
 		)
-public class Runner {
+public class ApiRunner {
 
 }

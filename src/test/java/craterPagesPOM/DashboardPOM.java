@@ -17,6 +17,9 @@ public class DashboardPOM {
 		
 		@FindBy (xpath = "//span[text()='Amount Due']")
 		public WebElement amountDueText;
+		
+		@FindBy(xpath= "//h3[text()='Settings']")
+		public WebElement settingsText;
 
 	}
 
