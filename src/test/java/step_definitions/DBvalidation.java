@@ -92,6 +92,7 @@ public class DBvalidation {
 		items.threeDotsBtn.click();
 		items.ItemDeleteBtn.click();
 		items.deleteOkButton.click();
+		browser.waitUntilElementVisible(items.itemDeletedMsg);
 		assertTrue(items.itemDeletedMsg.isDisplayed());
 
 	}
