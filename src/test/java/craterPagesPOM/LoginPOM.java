@@ -36,14 +36,14 @@ public class LoginPOM {
 	public WebElement businessSubtext;
 	
 	@FindBy (xpath = "//p[contains(text(), 'These credentials do not match our records.')]")
-	public WebElement invalidUserErrorMessage;
+	public WebElement credsDoNotMatchrError;
 	
 	@FindBy (xpath = "//span[text()='Field is required']")
 	public WebElement fieldRequiredMsg;
 	
 	//CRATER METHODS
 	  
-	  public static void craterLogin1() {
+	  public void craterLogin1() {
 		  LoginPOM login = new LoginPOM();
 		  login.userEmailField.sendKeys(DataReader.getData("craterValidUserEmail"));
 		  login.passwordField.sendKeys(DataReader.getData("craterValidPassword"));
